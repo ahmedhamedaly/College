@@ -1,0 +1,108 @@
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+
+==============================================================================
+
+Section Cross References
+
+    connect4.o(RESET) refers to connect4.o(globals) for BOARD
+
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section     2072  connect4.o(RESET)
+    connect4.s                               0x00000000   Number         0  connect4.o ABSOLUTE
+    str_go                                   0x00000630   Data           0  connect4.o(RESET)
+    NewLine                                  0x0000064a   Data           0  connect4.o(RESET)
+    RedsTurn                                 0x0000064d   Data           0  connect4.o(RESET)
+    YellowsTurn                              0x0000068b   Data           0  connect4.o(RESET)
+    InvalidInput                             0x000006cc   Data           0  connect4.o(RESET)
+    Quit                                     0x000006ed   Data           0  connect4.o(RESET)
+    Rows                                     0x00000712   Data           0  connect4.o(RESET)
+    Red                                      0x00000722   Data           0  connect4.o(RESET)
+    Yellow                                   0x00000725   Data           0  connect4.o(RESET)
+    Blank                                    0x00000728   Data           0  connect4.o(RESET)
+    column1                                  0x0000072b   Data           0  connect4.o(RESET)
+    column2                                  0x0000072e   Data           0  connect4.o(RESET)
+    column3                                  0x00000731   Data           0  connect4.o(RESET)
+    column4                                  0x00000734   Data           0  connect4.o(RESET)
+    column5                                  0x00000737   Data           0  connect4.o(RESET)
+    column6                                  0x0000073a   Data           0  connect4.o(RESET)
+    RedWins                                  0x0000073d   Data           0  connect4.o(RESET)
+    YellowWins                               0x00000751   Data           0  connect4.o(RESET)
+    BoardFull                                0x00000768   Data           0  connect4.o(RESET)
+    globals                                  0x40000000   Section       42  connect4.o(globals)
+    BOARD                                    0x40000000   Data           7  connect4.o(globals)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv1$ARM_ISAv4$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$STANDARDLIB$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000000
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00000844, Max: 0x00080000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000818, Max: 0x00080000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x00000818   Code   RO            2  * RESET               connect4.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x40000000, Load base: 0x00000818, Size: 0x0000002c, Max: 0x00010000, ABSOLUTE, UNINIT)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x40000000   0x00000818   0x0000002a   Data   RW            1    globals             connect4.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      2072        488          0         42          0        676   connect4.o
+
+    ----------------------------------------------------------------------
+      2072        488          0         44          0        676   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+         0          0          0          2          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+         0          0          0          0          0          0   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      2072        488          0         44          0        676   Grand Totals
+      2072        488          0         44          0        676   ELF Image Totals
+      2072        488          0         44          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 2072 (   2.02kB)
+    Total RW  Size (RW Data + ZI Data)                44 (   0.04kB)
+    Total ROM Size (Code + RO Data + RW Data)       2116 (   2.07kB)
+
+==============================================================================
+

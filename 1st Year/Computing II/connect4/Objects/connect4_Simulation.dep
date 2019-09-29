@@ -1,0 +1,2 @@
+Dependencies for Project 'connect4', Target 'Simulation': (DO NOT MODIFY !)
+F (.\connect4.s)(0x5C8ABD19)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips--pd "__UVISION_VERSION SETA 526"--list .\listings\connect4.lst --xref -o .\objects\connect4.o --depend .\objects\connect4.d)
