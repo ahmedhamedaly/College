@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="src/core.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/voice_rec/javax.servlet-api-3.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/voice_rec/jetty-http-9.3.6.v20151106.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/voice_rec/jetty-io-9.3.6.v20151106.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/voice_rec/jetty-security-9.3.6.v20151106.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/voice_rec/jetty-server-9.3.6.v20151106.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/voice_rec/jetty-servlet-9.3.6.v20151106.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/voice_rec/jetty-util-9.3.6.v20151106.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/voice_rec/slf4j-api-1.7.13.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/voice_rec/slf4j-simple-1.7.13.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/voice_rec/websocket-api-9.3.6.v20151106.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/voice_rec/websocket-client-9.3.6.v20151106.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/voice_rec/websocket-common-9.3.6.v20151106.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/voice_rec/webSockets.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/voice_rec/websocket-server-9.3.6.v20151106.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/voice_rec/websocket-servlet-9.3.6.v20151106.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-java-8.0.15.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/minim/library/jl1.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/minim/library/jsminim.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/minim/library/minim.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/minim/library/mp3spi1.9.5.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/minim/library/tritonus_aos.jar"/>
+	<classpathentry kind="lib" path="D:/Desktop/minim/library/tritonus_share.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
