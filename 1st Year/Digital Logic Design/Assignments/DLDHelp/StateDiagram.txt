@@ -1,0 +1,10 @@
+GIVEN: module StateDiagram(output y_out, input x_in, clk, reset_b);
+
+The output should be a finite state machine which has an input of input x and input y_out
+
+x changes from 0 to 1 and y is the 3 cycles.
+
+keep note that text data will change on the falling edge of the clock and your machine.
+
+your design should enter state 0 to negative edge of the reset signal (check notes)
+

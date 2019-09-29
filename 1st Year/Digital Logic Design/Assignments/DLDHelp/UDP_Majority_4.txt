@@ -1,0 +1,5 @@
+GIVEN: primitive UDP_Majority_4 (z, a, b, c, d);
+ 
+ create a truth table for the outbits of a 4 input majority function where if the majority is 1 the output is 1
+ 
+ it has to be 4 bits

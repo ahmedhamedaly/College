@@ -1,0 +1,5 @@
+GIVEN: module Circuit_2 (Out_1, Out_2, Out_3, A, B, C, D);
+
+you should assign 3 outputs for the circuit as stated in the question. 
+
+the output should be written in notation should as "||" for or, "&&" for and, "!" for notation

@@ -1,0 +1,8 @@
+GIVEN : module FiniteStateMachine (output out_z, input in_x, in_y, clk, reset_b);
+
+This is to create a circuit described in the state which is shown in the question
+
+it has to change every falling edge of the clock and the machine should change state on the rising edge
+
+i designed it so it should enter the state at 00 of the negative edge of the reset signal
+see notes for more detail

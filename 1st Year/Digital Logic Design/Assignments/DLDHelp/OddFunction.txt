@@ -1,0 +1,8 @@
+GIVEN: module OddFunction (output A, input x, y, clk, reset_b);
+
+You have to module the same output states as the diagram in the question
+https://www.scss.tcd.ie/John.Waldron/cs1026/ass7.pdf
+
+this could be done by entering state 0 at a negative edge of the reset and continuing to reach the last state which is 1
+
+the signal waves in the question is very helpful try to understand it

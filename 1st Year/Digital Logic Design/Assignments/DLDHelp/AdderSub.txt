@@ -1,0 +1,9 @@
+The input should be A and B as an Array and select as another input.
+This should implement a 4-bit adder-subtracter of unsigned numbers...
+
+GIVEN: module	AdderSub(sum_diff, carry, A, B, select);
+
+you should output 4 bit sum and difference and second is carry.
+
+first 2 inputs should be added and final should tell weither its added or subtracted
+a

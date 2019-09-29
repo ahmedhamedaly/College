@@ -1,0 +1,22 @@
+module Counter_1 (output reg [2:0] Count, input clock, reset);
+	reg[2:0] state, next_state;
+	
+	parameter S0 = 3'b000, S1 = 3'b001, S2 = 3'b011, S3 = 3'b111, S4 = 3'b110, S5 = 3'b100;
+	
+	always @ (posedge clock, negedge reset)
+		if (reset == 0) state <= S0;
+		else state <= next_state;
+		
+	always @ (state)
+		case (state)
+			S0: next_state = S1; 
+			S1: next_state = S2;
+			S2: next_state = S3;
+			S3: next_state = S4;
+			S4: next_state = S5;
+			S5: next_state = S0;
+		endcase
+		
+	always @ (state)
+		Count = state;
+endmodule

@@ -1,0 +1,14 @@
+module Compare (A, B, Y);
+  input [3:0] A, B;
+  output reg [5:0] Y;
+
+  always @(A or B)
+  begin
+    if(A == B)
+      Y = 6'b100011;
+    else if(A > B)
+      Y = 6'b011010;
+    else if(A < B)
+      Y = 6'b010101;
+  end
+endmodule

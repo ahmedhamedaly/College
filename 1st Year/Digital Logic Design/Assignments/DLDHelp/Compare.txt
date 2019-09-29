@@ -1,0 +1,8 @@
+GIVEN: module Compare (A, B, Y);
+  
+Should return 100011 if A == b
+
+and if A is greater is should return another six bit number, that represents a is bigger
+
+repeat for if a is less than
+ 

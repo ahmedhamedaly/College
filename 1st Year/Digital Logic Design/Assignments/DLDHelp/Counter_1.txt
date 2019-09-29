@@ -1,0 +1,7 @@
+GIVEN: module Counter_1 (output reg [2:0] Count, input clock, reset);
+	
+You should add a counter in a clock form.
+
+this counter is counting up to 8 different modes
+
+check notes for simpliar explaination

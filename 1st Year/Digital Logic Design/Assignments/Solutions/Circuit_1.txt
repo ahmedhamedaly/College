@@ -1,0 +1,12 @@
+`timescale 1ns/100ps
+`default_nettype none
+
+module Circuit_1 (A, B, C, F1, F2);
+	output F1, F2;
+	input A, B, C;
+	wire T1, T2, T3, w1, w2, w3, w4;
+	and G1 (T2, A, B, C), G3 (w1, A, B), G4 (w2, A, C), G5 (w3, B, C), G8 (T3, T1, w4);
+	or G2 (T1, A, B, C), G6 (F2, w1, w2, w3), G9 (F1, T2, T3);
+	not G7 (w4, F2);
+	
+endmodule

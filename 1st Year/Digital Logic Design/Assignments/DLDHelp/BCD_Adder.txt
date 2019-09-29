@@ -1,0 +1,9 @@
+GIVEN : module BCD_Adder (sum, Carry_out, Addend, Augend, Carry_in);
+
+You should add a four bit binary number thats a float.
+
+begin by writing a four bit binary adder module. 
+
+initialise it 2 times in your binary coded decimal module and use structral verilog
+
+the inputs are addend augend and carry_in which is given and the output is sum and carryout
