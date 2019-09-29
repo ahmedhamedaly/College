@@ -1,0 +1,75 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;
+    2 00000000         ; CS1021 2018/2019 Lab 2
+    3 00000000         ; 
+    4 00000000         
+    5 00000000         
+    6 00000000                 AREA             RESET, CODE, READONLY
+    7 00000000                 ENTRY
+    8 00000000         ;
+    9 00000000         ; add your code for Q2 here part (ii) SIGNED (n = 0x2E o
+                       r 46)
+   10 00000000         ;
+   11 00000000 E3A01001        MOV              R1, #1      ; n = 1  
+   12 00000004 E3A02000        MOV              R2, #0      ; Fa = 0
+   13 00000008 E3A03001        MOV              R3, #1      ; Fb = 0
+   14 0000000C E3E05102        MOV              R5, #2147483647 ; R5 = MAX
+   15 00000010 E2811001 
+                       ST4     ADD              R1, R1, #1  ; n = n + 1
+   16 00000014 E1A04003        MOV              R4, R3      ; temp = Fb
+   17 00000018 E0833002        ADD              R3, R3, R2  ; Fb = Fb + Fa
+   18 0000001C E1A02004        MOV              R2, R4      ; Fa = temp
+   19 00000020 E0456003        SUB              R6, R5, R3  ; R6 = Max - Fb
+   20 00000024 E1560002        CMP              R6, R2      ; Max - Fb > Fa
+   21 00000028 8AFFFFF8        BHI              ST4         ; repeat if Max - F
+                                                            b < Fa
+   22 0000002C E1A00001        MOV              R0, R1      ; Put answer in R0 
+                                                            
+   23 00000030         
+   24 00000030         
+   25 00000030 EAFFFFFE 
+                       STOP    B                STOP        ; infinite loop to 
+                                                            end
+   26 00000034         
+   27 00000034                 END
+Command Line: --debug --xref --diag_suppress=9931 --apcs=interwork --depend=.\o
+bjects\lab2.d -o.\objects\lab2.o -IC:\Keil_v5\ARM\RV31\INC -IC:\Keil_v5\ARM\CMS
+IS\Include -IC:\Keil_v5\ARM\INC\Philips --predefine="__EVAL SETA 1" --predefine
+="__UVISION_VERSION SETA 526" --list=.\listings\lab2.lst lab2.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 6 in file lab2.s
+   Uses
+      None
+Comment: RESET unused
+ST4 00000010
+
+Symbol: ST4
+   Definitions
+      At line 15 in file lab2.s
+   Uses
+      At line 21 in file lab2.s
+Comment: ST4 used once
+STOP 00000030
+
+Symbol: STOP
+   Definitions
+      At line 25 in file lab2.s
+   Uses
+      At line 25 in file lab2.s
+Comment: STOP used once
+3 symbols
+335 symbols in table
